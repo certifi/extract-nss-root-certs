@@ -1,5 +1,16 @@
+extract-nss-root-certs
+======================
+
+This project contains a fork of
+[Adam Langley's project of the same name](https://github.com/agl/extract-nss-root-certs)
+for use in the certifi project.
+
+Rather than treat this as a dependency (and so requiring that you have Go
+installed), I recommend you download the appropriate binary from the releases
+page.
+
 Extracting Mozilla's Root Certificates
-======================================
+--------------------------------------
 
 When people need a list of root certificates, they often turn to Mozilla's. However, Mozilla doesn't produce a nice list of PEM encoded certificate, rather they keep them in a form which is convenient for NSS to build from:
 
